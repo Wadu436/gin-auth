@@ -41,6 +41,6 @@ func main() {
 		c.String(http.StatusOK, "exciting super secret stuff!")
 	})
 
-	err := r.Run(":8080")
+	err := r.Run("localhost:8080")
 	log.Fatal(err)
 }
