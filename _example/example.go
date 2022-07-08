@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/wadu436/gin-basic-auth/auth"
+	auth "github.com/wadu436/gin-auth"
 )
 
 var accounts map[string]auth.User = make(map[string]auth.User)
@@ -15,7 +15,7 @@ func main() {
 	r := gin.Default()
 
 	// Create framework
-	a := auth.AuthFramework{
+	a := auth.Auth{
 		LoadUser: func(username string) (user auth.User, exists bool) {
 			user, exists = accounts[username]
 			return
