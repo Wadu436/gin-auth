@@ -7,6 +7,8 @@ require (
 	github.com/wadu436/gin-auth v0.0.0-20220708082355-5d1e193b0e89
 )
 
+replace github.com/wadu436/gin-auth => ../
+
 require (
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
