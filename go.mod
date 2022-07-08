@@ -1,4 +1,4 @@
-module github.com/wadu436/gin-basic-auth
+module github.com/wadu436/gin-auth
 
 go 1.18
 
